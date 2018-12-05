@@ -3,50 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Jennifer's Portfolio</title>
+    <title>Jennifer's Portfolio - Contact</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!--Site Header: Top Menu-->
-    <div>
-        <!--Name logo-->    
-        <section id="name">   
+    <header>
+        <!--Name logo-->      
         <h1>Jennifer Gingras</h1>
-        </section>
 
-        <!--Page nagivation (code from W3schools, check if it's the proper application)-->
-        <section id="topnav">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="contact">Contact</a>
-        </section>
-    </div> 
+         <!--Page nagivation-->
+         <ul id="nav">
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Portfolio</li>
+            <li><a href="#"></a>Contact</li>
+        </ul>
+    </header> 
 
      <!--Contact Container-->  
-    <section>
+    <div class="container">
 
         <!--Contact heading-->
-        <h1>Contact</h1>
+        <h2>Contact</h2>
+
+        <hr>
 
         <!--Form-->
         <form>
             Name<br>
-            <input type="text" name="name"><br>
+            <input type="text" name="name"><br><br>
             Email<br>
-            <input type="text" name="email"><br>
+            <input type="text" name="email"><br><br>
             Message<br>
-            <input type="text" name="message"><br><br>
-            <input type="submit" value="Submit">
+            <textarea name="Message"></textarea><br><br>
+            <button type="button" onclick="Submit">Submit</button>
         </form>
-    </section>
+    </div>
 
+
+</body>
 
 <footer>
     <p>Copyright ©</p>
 </footer>
-
-</body>
 
 </html>
