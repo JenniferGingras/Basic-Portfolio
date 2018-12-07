@@ -11,34 +11,55 @@
 
      <!--Site Header: Top Menu-->
      <header>
-        <!--Name logo-->       
-         <h1>Jennifer Gingras</h1>
 
-        <!--Page nagivation-->
-         <ul id="nav">
-             <li><a href="#"></a>About</li>
-             <li><a href="#"></a>Portfolio</li>
-             <li><a href="#"></a>Contact</li>
-         </ul>
+          <!--Page nagivation-->
+          <nav>
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a> 
+            </nav>
+
+         <!--Name logo-->       
+         <h1>Jennifer Gingras</h1>
     </header> 
 
     <!--Portfolio Containter-->
+    <!--Add clearfix to containing element, so does it go here?-->
+    
     <div class="container">
-
+        
          <!--Page title-->
          <h2>Portfolio</h2>
 
          <hr>
 
         <!--Portfolio images-->
-        <section id="float">
-            <img src="assets/images/project-1.jpg" width="200" height="200">
-            <img src="assets/images/project-2.jpg" width="200" height="200">
-            <img src="assets/images/project-3.jpg" width="200" height="200">
-            <img src="assets/images/project-4.jpg" width="200" height="200">
-            <img src="assets/images/project-5.png" width="200" height="200">
-            <img src="assets/images/project-6.jpg" width="200" height="200">
-        </section>    
+        <div class="clearfix">
+          <div class="bar">
+                <img src="assets/images/project-1.jpg" width="200" height="200">
+                    <h3>Festival</h3>
+            </div>
+            <div class="bar">
+                <img src="assets/images/project-2.jpg" width="200" height="200">
+                    <h3>Annual Report</h3>
+            </div>
+            <div class="bar">
+                <img src="assets/images/project-3.jpg" width="200" height="200">
+                    <h3>Website</h3>
+            </div>
+            <div class="bar">
+                <img src="assets/images/project-4.jpg" width="200" height="200">
+                    <h3>Company Brand</h3>
+            </div>
+            <div class="bar">
+                <img src="assets/images/project-5.png" width="200" height="200">
+                    <h3>Magazine</h3>
+            </div>
+            <div class="bar">
+                <img src="assets/images/project-6.jpg" width="200" height="200">
+                    <h3>Infographics</h3>
+            </div>
+        </div>  
 
     </div>
 
