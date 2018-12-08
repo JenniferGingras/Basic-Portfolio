@@ -4,6 +4,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12pt;
     line-height: 16pt;
+    margin: 0;
+    padding: 0;
 }
 
 /* the header at the top with name logo and navigation links to other pages */    
@@ -14,8 +16,8 @@ header {
     background-color: #ffffff;
     width: 100%;
     height: 80px;
-    margin-bottom: 30px;
     border-bottom: #dddddd solid 1px;
+    z-index: 1;
 }
 
 /* the name "logo" */
@@ -35,7 +37,7 @@ h1 {
 /* Top Navigation */
 nav {
     float: right;
-    margin-right: 20%;
+    margin: 0 20% 0 0;
     padding: 30px 0 0 0;
 }
 
@@ -57,12 +59,9 @@ nav a:active {
     color: #dddddd
 }
 
-
-
-
 /* the container holds the page title and the content */
 .container {
-    position: absolute;
+    position: relative;
     top: 110px;
     margin-right: 20%;
     margin-left: 20%;
@@ -72,17 +71,13 @@ nav a:active {
     background: #ffffff;
 }
 
-.clearfix {
-    overflow: auto;
-}
 
-/*
-.clearfix.container {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
- */ 
+ 
   
 
 h2 {
@@ -115,6 +110,7 @@ h3 {
     position: absolute;
     bottom: 20px;
 }
+
 /* contact form */
 input {
     width: 100%;
@@ -137,12 +133,14 @@ button {
 footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; 
+    margin-top: 60px;
     background-color: #666666;
     width: 100%;
-    height: 40px;
+    height: 30px;
     padding: 10px;
     font-size: 10pt;
-    color: #ffffff;
+    color: #dddddd;
     text-align: center;
+    border-top: #4aaaa5 solid 4px;
 }
